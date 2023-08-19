@@ -1,7 +1,11 @@
 {
-  "id": "nerdamer-test",
-  "name": "Obsidian Plugin Template",
-  "description": "A Simple Template for Plugins",
-  "isDesktopOnly": false,
-  "js": "main.js"
+	"id": "nerdamer-test",
+	"name": "Sample Plugin",
+	"version": "0.0.4",
+	"minAppVersion": "0.15.0",
+	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
+	"author": "Obsidian",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
 }
