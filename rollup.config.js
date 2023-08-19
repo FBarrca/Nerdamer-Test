@@ -21,5 +21,9 @@ export default {
     banner,
   },
   external: ["obsidian"],
-  plugins: [typescript(), nodeResolve({ browser: true }), commonjs()],
+  plugins: [typescript(), nodeResolve({ browser: true }), commonjs({
+    include: 'src/nerdamer/**',  // Only transform nerdamer files
+    esmExternals: true,  // Treat ES Modules as external
+    transformMixedEsModules: true  // Allow mixed ES/CommonJS modules
+  })],
 };
