@@ -1,4 +1,6 @@
-import { App, Plugin, PluginSettingTab, Setting } from "obsidian";
+import { App, Notice, Plugin, PluginSettingTab, Setting } from "obsidian";
+
+import * as nerdamer from "nerdamer";
 
 export default class MyPlugin extends Plugin {
   // This field stores your plugin settings.
@@ -8,6 +10,10 @@ export default class MyPlugin extends Plugin {
 
   async onload() {
     console.log("Plugin is Loading...");
+    var e = nerdamer('x^2+2*(cos(x)+x*x)');
+    console.log(e.text());
+    new Notice(e.text());
+
 
     // This snippet of code is used to load pluging settings from disk (if any)
     // and then add the setting tab in the Obsidian Settings panel.
